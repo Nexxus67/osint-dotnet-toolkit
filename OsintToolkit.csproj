@@ -2,12 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-</PropertyGroup>
+    <PackageId>OsintDotNetToolkit</PackageId> 
+    <Version>1.0.0</Version> <!-- Cambia esto a la versión que deseas -->
+    <Authors>Nexxus67</Authors> 
+    <Description>A dotnet library for OSINT domain search</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression> <!-- O el tipo de licencia que prefieras -->
+    <PackageProjectUrl>https://github.com/Nexxus67/osint-dotnet-toolkit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Nexxus67/osint-dotnet-toolkit</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="RestSharp" Version="110.1.0" />

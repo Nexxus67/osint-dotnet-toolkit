@@ -17,8 +17,8 @@ namespace OsintToolkit
 
         public async Task<DomainInfo> GetDomainInfoAsync(string domain)
         {
-            var client = new RestClient("https://www.virustotal.com/vtapi/v2/domain/report");
-            var request = new RestRequest
+            RestClient client = new RestClient("https://www.virustotal.com/vtapi/v2/domain/report");
+            RestRequest request = new RestRequest
             {
                 Method = Method.Get
             };
@@ -32,7 +32,7 @@ namespace OsintToolkit
             {
                 try
                 {
-                    var domainInfo = JsonConvert.DeserializeObject<DomainInfo>(response.Content);
+                    DomainInfo domainInfo = JsonConvert.DeserializeObject<DomainInfo>(response.Content);
 
                     if (domainInfo == null)
                     {
