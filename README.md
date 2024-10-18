@@ -38,15 +38,15 @@ class Program
     {
         string apiKey = "your-api-key"; 
 
-        var osintManager = new OsintManager(apiKey); 
+        OsintManager osintManager = new OsintManager(apiKey); 
 
         try
         {
-            var domainInfo = await osintManager.GetDomainInfoAsync("yourdomain.com");
+            DomainInfo domainInfo = await osintManager.GetDomainInfoAsync("tiboapp.com");
             Console.WriteLine($"Domain: {domainInfo.Domain}");
             Console.WriteLine($"WHOIS: {domainInfo.Whois}");
             Console.WriteLine("Resolutions:");
-            foreach (var resolution in domainInfo.Resolutions)
+            foreach (Resolution resolution in domainInfo.Resolutions)
             {
                 Console.WriteLine($"IP: {resolution.IpAddress}, Last Resolved: {resolution.LastResolved}");
             }
@@ -61,6 +61,7 @@ class Program
         }
     }
 }
+
 
 ```
 
