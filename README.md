@@ -42,7 +42,7 @@ class Program
 
         try
         {
-            DomainInfo domainInfo = await osintManager.GetDomainInfoAsync("tiboapp.com");
+            DomainInfo domainInfo = await osintManager.GetDomainInfoAsync("your-desired-domain.com");
             Console.WriteLine($"Domain: {domainInfo.Domain}");
             Console.WriteLine($"WHOIS: {domainInfo.Whois}");
             Console.WriteLine("Resolutions:");

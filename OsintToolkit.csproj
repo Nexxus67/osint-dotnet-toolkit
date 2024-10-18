@@ -4,10 +4,10 @@
     <TargetFramework>net7.0</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <PackageId>OsintDotNetToolkit</PackageId> 
-    <Version>1.0.0</Version> <!-- Cambia esto a la versión que deseas -->
+    <Version>1.0.1</Version> 
     <Authors>Nexxus67</Authors> 
     <Description>A dotnet library for OSINT domain search</Description>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression> <!-- O el tipo de licencia que prefieras -->
+    <PackageLicenseExpression>MIT</PackageLicenseExpression> 
     <PackageProjectUrl>https://github.com/Nexxus67/osint-dotnet-toolkit</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Nexxus67/osint-dotnet-toolkit</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
